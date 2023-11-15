@@ -1,0 +1,106 @@
+.main-block{
+    font-family: "Courier", monospace;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.header-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.body-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.body-block{
+    display: block;
+    width: 100vw;
+    height: fit-content;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.typing-text {
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Начальный прозрачный цвет границы */    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 24px;
+    animation: typing 1s steps(40, end) forwards, border-blink 1s infinite; /* Добавляем анимацию мигания */}
+
+@keyframes border-blink {
+    0% {
+        border-color: transparent; /* Начальный момент: прозрачный цвет границы */
+    }
+    50% {
+        border-color: rgb(0, 157, 255); /* Средний момент: цвет границы */
+    }
+    100% {
+        border-color: transparent; /* Конечный момент: снова прозрачный цвет */
+    }
+}
+
+.header-text-block{
+    width: fit-content;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.chess-block{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.chess-stats{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.chess-com-block,
+.lichess-block{
+    display: block;
+    width: 45%;
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+.chess-com-profile-picture img {
+    width: 100px; /* Задайте размер аватарки по вашему усмотрению */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    display: block; /* Чтобы избежать пробелов под картинкой */
+    margin: 0 auto 10px; /* Центрирование и отступ снизу */
+}
+
+
+.chess-com-stats div {
+    margin-bottom: 10px; /* Отступ между текстовыми блоками */
+}
